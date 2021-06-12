@@ -1,0 +1,11 @@
+# Write a Python program to get a new string from a given string where "Is" has been added to the front.
+# If the given string already begins with "Is" then return the string unchanged.
+
+my_string = input('Input a string : ')
+
+# when a given Is present in 0 and 1 index of Isempty string after excluding last five index to check
+# 'Is' is present in beginning or not
+if 'Is' in my_string[:-5]:
+    print('Is already added')
+else:
+    print('Is'+my_string)
